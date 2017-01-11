@@ -26,4 +26,4 @@ var currentAge = 40;
 var maxAge = 85;
 var numberOfGlass = 8;
 var totalNeeded = (numberOfGlass * 365) * (maxAge - currentAge);
-console.log(totalNeeded);
+console.log("You will need " + totalNeeded + "glasses of water until rest of your life");
