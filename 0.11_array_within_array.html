@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>For Loops</title>
+<head>
+<body>
+
+
+<style>
+div {background-color:#eee;padding:20px;border-radius:20px;margin:10px;width:30px; height:30px;float:left;}
+</style>
+<script>
+var playList = [
+  ['I did it my way', 'Frank Sinatra'],
+  ['bitches and hoes', 'dr. dre'],
+  ['thriller', 'micheal jackson'],
+  ['titanic', 'Some lady']
+];
+
+function print(message) {
+  document.write(message);
+}
+
+function printSongs(songs) {
+	var listHTML = '<ol>';
+	for (var i=0; i < songs.length; i += 1) {
+		listHTML += '<li>' + songs[i][0] + ' by ' + songs[i][1] + '</li>';
+	}
+	listHTML += '</ol>';
+	print(listHTML);
+}
+
+printSongs(playList);
+
+console.log("--------------------");
+
+var coordinates = [
+  ['one', 'two']
+
+];
+
+coordinates[0].push('life', 'love');
+
+</script>
+
+</body>
+
+</html>

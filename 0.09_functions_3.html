@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Functions</title>
+	<head>
+	<body>
+	<form>
+		<input type="text" id="email" />
+		<button type="submit">Submit</button>
+
+	</form>
+
+
+	<script>
+
+	// return is used to send back value from a function
+	// you can only return one return value at a time.
+	// return is the last thing it will run in the content subblock
+	function isEmailEmpty() {
+		var field = document.getElementById('email');
+		if (field.value === '') {
+			return true;
+		} else {
+			false
+		}
+	}
+
+	var fieldTest = isEmailEmpty();
+	if (fieldTest === true) {
+		document.write('Please provide your email address');
+	}
+
+
+	</script>
+
+	</body>
+
+</html>

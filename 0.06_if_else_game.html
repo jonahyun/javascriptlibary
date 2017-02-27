@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Number Guessing Game using if/else if/else</title>
+	<head>
+	<body>
+
+
+
+	<script>
+		/*
+		The random number guessing game
+		*/
+
+		alert("Let's Start")
+
+		var correctGuess = false;
+		var randomNumber = Math.floor(Math.random() * 6) + 1;
+		var guess = prompt("I am thinking of number between 1 and 6. What is it?")
+
+		//requests to user to enter a number, if too low, give them second chance 
+		if (parseInt(guess) === randomNumber) {
+			correctGuess = true;
+		} else if ( parseInt(guess) < randomNumber) {
+			var guessMore = prompt('Please try again. What I am thinking of is more than ' + guess);
+			if (parseInt(guessMore) === randomNumber) {
+				correctGuess = true;
+			}
+
+		//requests to user to enter a number, if too high, give them second chance 
+		} else if ( parseInt(guess) > randomNumber) {
+			var guessLess = prompt("PLease try again. What I am thinking of is less than " + guess);
+			if (parseInt(guessLess) === randomNumber) {
+				correctGuess = true;
+			}
+		}
+
+		//tests if the guess is correct
+		if (correctGuess) {
+			document.write("<p>You guessed the number");
+		} else {
+			document.write("<p>The correct number is " + randomNumber + " </p>")
+		}
+
+	</script>
+
+	</body>
+
+</html>

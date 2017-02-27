@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Objects For In Loop</title>
+<link rel="stylesheet" href="main.css">
+<head>
+<body>
+
+<div id="output"></div>
+
+<script>
+//for in loop is only used to loop object literals
+//When using for in loop, in order to access properties, 
+//you can only use [] bracket notation
+//you cannot use . dot notation inside the for in loop
+
+
+
+var person = {
+	name: 'Sarah',
+	country: 'US',
+	age: 35,
+	treehouseStudent: true,
+	skills : ['Javascript', 'html', 'css']
+};
+
+for (var prop in person) {
+	console.log(prop, ': ', person[prop]);
+}
+
+
+</script>
+
+</body>
+
+</html>

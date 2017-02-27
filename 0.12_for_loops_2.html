@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>For Loops</title>
+<head>
+<body>
+
+
+<style>
+div {background-color:#eee;padding:20px;border-radius:20px;margin:10px;width:30px; height:30px;float:left;}
+</style>
+<script>
+
+var html = '';
+
+for ( var i = 1; i <= 10; i++ ) {
+	html += '<div>' + i + '</div>'; 
+
+}
+document.write(html);
+
+document.write("<p>-----------------------------</p>");
+
+
+//repeat j .
+
+for (var j = 4; j <= 156; j++) {
+  console.log(j);
+}
+
+
+
+
+document.write("<p>-----------------------------</p>");
+
+
+//change to random color
+
+var html = '';
+var red;
+var green;
+var blue;
+var rgbColor;
+
+function randomize() {
+	return Math.floor(Math.random() * 256 );
+} 
+
+for (var i=0; i < 68; i++) {
+  red = randomize();
+  green = randomize();
+  blue = randomize();
+  rgbColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+  html += '<div style="background-color:' + rgbColor + '"></div>';
+}
+document.write(html);
+
+
+</script>
+
+</body>
+
+</html>

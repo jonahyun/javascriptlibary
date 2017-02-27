@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Array of Objects</title>
+<link rel="stylesheet" href="main.css">
+<head>
+<body>
+<h1>Students</h1>
+<div id="output"></div>
+
+<script>
+
+
+
+
+var students = [
+  {
+    name: 'jona',
+    age: 40,
+    grade: 'A'
+  },
+  {
+    name: 'lisa',
+    age: 25,
+    grade: 'A',
+  },
+  {
+    name: 'mogan',
+    age: 28,
+    grade: 'A+',
+    skills: ['hockey', 'angular']
+  }
+];
+
+
+function print(message) {
+  var outputDiv = document.getElementById('output');
+  outputDiv.innerHTML = message;
+}
+
+var message = '';
+var student;
+
+for (var prop in students.length) {
+	var listHTML = '<p>our top students are <strong>' + students[prop].name + '</strong> is ';
+		listHTML += students[prop].age + ' year old and';
+		listHTML += 'have a grade of ' + students[prop].grade + students[prop].skills + '</p>';
+		
+}
+print(listHTML);
+
+</script>
+
+</body>
+
+</html>

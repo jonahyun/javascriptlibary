@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Functions</title>
+<head>
+<body>
+
+
+
+<script>
+
+// functions can accept information called argument which can send to a function
+// argument is stored in a variable called parameter
+// Term:  "Passing an argument to a function"
+// Argument is a value that you pass to a function when you call a function.
+// Paramet is a variable in which athe function stores information passed to it.
+
+function getRandomNumber(upper) {
+	var randomNumber = Math.floor(Math.random() * upper) + 1;
+	return randomNumber; 
+}
+
+// console.log(getRandomNumber(8));
+// console.log(getRandomNumber(100));
+// console.log(getRandomNumber(90));
+
+// console.log("---------------------------------------")
+
+// Passing in multiple arguments
+function getArea(width, length, unit) {
+	var area = width * length;
+	return area + " " + unit;
+}
+console.log(getArea(50, 100, 'sqft'));
+
+// console.log("---------------------------------------")
+
+
+function max(num1, num2) {
+  var num1;
+  var num2;
+  if (num1 > num2) {
+    return num1; 
+  } 
+}
+  
+console.log(max(5,2));
+
+
+</script>
+
+</body>
+
+</html>

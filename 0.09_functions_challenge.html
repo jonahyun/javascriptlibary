@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Functions</title>
+<head>
+<body>
+
+
+
+<script>
+
+function getRandomNumbers(upper,lower) {
+  var randomNumber = Math.floor(Math.random() * ((upper - lower) + 1)) + lower;
+  if (isNaN(upper) || isNaN(lower)) {
+  	throw new Error("Please enter a valid number");
+  } else {
+  	return randomNumber;
+  }
+
+  
+}
+//console.log(getRandomNumbers(9,12));  
+console.log(getRandomNumbers("nine",12));
+
+</script>
+
+</body>
+
+</html>

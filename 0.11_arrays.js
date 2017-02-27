@@ -17,6 +17,7 @@ for (name in names) {
 	console.log(names[name]);
 }
 
+
 // create arrays of your favorite candy bars
 var favCandy = ["snickers", "babe ruth"];
 
@@ -31,4 +32,6 @@ favCandy.push("Peanut Butter Cups");
 
 console.log(favCandy);
 
-console.log(favCandy.slice(0,1));
+console.log("----------------------------")
+
+console.log(favCandy.slice(0,2));

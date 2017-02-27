@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Objects</title>
+<link rel="stylesheet" href="main.css">
+<head>
+<body>
+
+<div id="output"></div>
+
+<script>
+
+//Javascript object literal is a lik a package of variables
+//objects can be accesssed by 
+//1. bracket ex. person['name']
+//2. dot notation ex. person.name
+
+
+var person = {
+	name: 'Sarah',
+	country: 'US',
+	age: 35,
+	treehouseStudent: true,
+	skills : ['Javascript', 'html', 'css']
+};
+
+function print(message) {
+	var div = document.getElementById('output');
+	div.innerHTML = message;
+}
+
+var message = '<p>Hello. My name is ' + person.name + '</p>';
+message += '<p>I live in ' + person.country + '</p>';
+person.name = 'Rainbow Dash';
+message += '<p>But, I wilsh my name was <strong>' + person.name + '</strong></p>';
+person.age += 1;
+message += '<p>My age is now ' + person.age + '</p>';
+message += '<p>I have ' + person.skills.length + ' skills: ';
+message += person.skills.join(', ') + '</p>';
+print(message);
+
+
+</script>
+
+</body>
+
+</html>
